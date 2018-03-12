@@ -30,12 +30,14 @@ totals <- colSums(aa, dims = 1)
 avg <- round(rowMeans(aa, dims = 2), 2)
 stdv <- round(apply(aa, c(1,2), sd), 2)
 
+perc_correct <- sum(stdv==0)/(dim(stdv)[1]*dim(stdv)[2])
+
 rowSums(aa, dims = 2)
 
-aa[c("9.a"), 1, ]
+aa[c("6.2"), c("cmcgre7","wmulli8"), ]
 aa[c("7","9.a"), c("cmcgre7","smanto3"), ]
 
-write.csv(totals, file = "totals.csv")
-write.csv(avg, file = "avg.csv")
-write.csv(stdv, file = "stdv.csv")
+#write.csv(totals, file = "totals.csv")
+#write.csv(avg, file = "avg.csv")
+#write.csv(stdv, file = "stdv.csv")
 
