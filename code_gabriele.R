@@ -325,4 +325,4 @@ kable(perc_error, caption = "Percentage correct")
 ## ----points error tot------------------------------------------------------
 kable(points_error, caption = "Total score error")
 
-kable(points_error/(sum(ag$points)*dim(raters_err)[2])*100, caption = "Percentage score error")
+#kable(points_error/(sum(ag$points)*dim(raters_err)[2])*100, caption = "Percentage score error")
